@@ -10,7 +10,7 @@
 
 ### Функционал
 
-- **Обход голосовых UDP-узлов Discord** — полный аналог Windows Drover. Отслеживает UDP-сокеты и модифицирует характерный стартовый пакет голосового чата (74 байта): отправляет содержимое `drover-packet.bin`, затем байты `0x00` и `0x01` отдельными пакетами, выдерживает задержку 50 мс и пропускает оригинальный пакет. Файл `drover-packet.bin` перечитывается перед каждым новым соединением.
+- **Обход голосовых UDP-узлов Discord** — полный аналог Windows Drover. Отслеживает UDP-сокеты и модифицирует характерный стартовый пакет голосового чата.
 
 - **TCP через SOCKS5-прокси** — перехват HTTP `CONNECT` и runtime-конвертация в SOCKS5 handshake.
 
@@ -76,7 +76,7 @@ DROVER_DEBUG=1 LD_PRELOAD=./libdrover.so discord
 
 ### Features
 
-- **Discord voice UDP node bypass** — full equivalent of Windows Drover. Monitors UDP sockets and modifies the characteristic voice chat startup packet (74 bytes): sends the contents of `drover-packet.bin`, then bytes `0x00` and `0x01` as separate packets, waits 50 ms, and lets the original packet through. The `drover-packet.bin` file is re-read before each new connection.
+- **Discord voice UDP node bypass** — full equivalent of Windows Drover. Monitors UDP sockets and modifies the characteristic voice chat startup packet.
 
 - **TCP via SOCKS5 proxy** — intercepts HTTP `CONNECT` and converts it to SOCKS5 handshake at runtime.
 
