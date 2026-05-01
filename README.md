@@ -23,7 +23,7 @@
 **Сборка**
 
 ```bash
-cd linux-drover
+cd discord-drover-linux
 make
 ```
 
@@ -37,14 +37,14 @@ LD_PRELOAD=./libdrover.so discord
 Или через `~/.config/discord-drover/`:
 
 ```bash
-mkdir -p ~/.config/discord-drover
-cp libdrover.so drover.ini drover-packet.bin ~/.config/discord-drover/
-LD_PRELOAD=$HOME/.config/discord-drover/libdrover.so discord
+mkdir -p ~/.config/discord-drover-linux
+cp libdrover.so drover.ini drover-packet.bin ~/.config/discord-drover-linux/
+LD_PRELOAD=$HOME/.config/discord-drover-linux/libdrover.so discord
 ```
 
 **Конфигурация (`drover.ini`)**
 
-Файл ищется сначала рядом с `libdrover.so`, затем в `~/.config/discord-drover/`.
+Файл ищется сначала рядом с `libdrover.so`, затем в `~/.config/discord-drover-linux/`.
 
 ```ini
 [drover]
@@ -89,7 +89,7 @@ DROVER_DEBUG=1 LD_PRELOAD=./libdrover.so discord
 **Build**
 
 ```bash
-cd linux-drover
+cd discord-drover-linux
 make
 ```
 
@@ -100,17 +100,17 @@ make
 LD_PRELOAD=./libdrover.so discord
 ```
 
-Or via `~/.config/discord-drover/`:
+Or via `~/.config/discord-drover-linuxr/`:
 
 ```bash
-mkdir -p ~/.config/discord-drover
-cp libdrover.so drover.ini drover-packet.bin ~/.config/discord-drover/
-LD_PRELOAD=$HOME/.config/discord-drover/libdrover.so discord
+mkdir -p ~/.config/discord-drover-linux
+cp libdrover.so drover.ini drover-packet.bin ~/.config/discord-drover-linux/
+LD_PRELOAD=$HOME/.config/discord-drover-linux/libdrover.so discord
 ```
 
 **Configuration (`drover.ini`)**
 
-The file is searched first next to `libdrover.so`, then in `~/.config/discord-drover/`.
+The file is searched first next to `libdrover.so`, then in `~/.config/discord-drover-linux/`.
 
 ```ini
 [drover]
